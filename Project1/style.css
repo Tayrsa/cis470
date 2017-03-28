@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box; /*This line makes sure the width and height are the correct sizes no matter the padding */
+}
+.grid-container{
+    width: 100%;
+    max-width: 980px;
+    margin:auto;/* this line makes sure the container div is centered */
+    /*border: 1px solid purple*/
+}
+
+[class*='row-']{
+
+    overflow:auto;
+    /*border: 1px solid pink;*/
+    margin: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1{
+    font-family:"Old English Text MT";
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 75px;
+
+}
+h2, h3{
+    display: block;
+    text-align: left;
+    font-family:"Baskerville Old Face";
+    font-size:45px;
+}
+h3{
+    font-size: 30px;
+    text-align:center;
+}
+p{
+    font-family: Georgia, "Times New Roman";
+    font-size:20px;
+    text-align:justify;
+
+}
+img.uber, img.UX{
+    width: 100%;
+    height: 300px;
+}
+
+/* Add a black background color to the top navigation */
+.footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.footer a {
+
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-family:Georgia, "Times New Roman";
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.footer a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.footer a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*Grid Created*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*='col-'] { /* This css rule applies to any element that has the string "col-" in its class*/
+    float:left;
+    min-height: 1px;
+    /*-- our gutter inside each cell around it's content, change the value to see how it works--*/
+    padding: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    /*border: .5px solid red;*/
+    /**********Another way to set background color: Change the number values in it and see what happens**********/
+    /*background: rgba(76, 175, 80, 0.3);*/
+
+}
+
+[class='header']{
+    width: 100%;
+    padding: 15px;
+    /*border:1px solid green;*/
+    margin-bottom:5px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+/*[class='footer']{
+    width: 100%;
+    padding: 15px;
+    border:1px solid blue;
+    margin-top:5px;
+
+}*/
+
+[class='row-1']{
+    min-height:350%;
+}
+
+[class='row-2']{
+    min-height: 560px;
+}
+
+[class='row-3']{
+    min-height: 350px;
+}
+
+[class="col-4"]{
+    margin-right:50px;
+    margin-left:32px;
+    min-height:350px;
+}
+
+[class="col-3"]{
+    margin-right:10px;
+    min-height:350px;
+}
+
+[class="col-7"]{
+    height:360px;
+}
+
+[class="col-1"]{
+    width:33.33%;
+    height:680px;
+}
