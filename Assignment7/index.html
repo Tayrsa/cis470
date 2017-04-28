@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btn').click(function () {
+            $('#pp1').hide('slow');
+            $('#pp2').hide('slow');
+            $('#pp3').hide('slow');
+            return false;
+        });
+    });
+    $( document.body ).click(function() {
+        $( "li" ).each(function( i ) {
+            if ( this.style.color !== "blue" ) {
+                this.style.color = "blue";
+            } else {
+                this.style.color = "";
+            }
+        });
+    });
+    $( document.body ).click(function() {
+        $( "div" ).each(function( i ) {
+            if ( this.style.color !== "blue" ) {
+                this.style.color = "blue";
+            } else {
+                this.style.color = "";
+            }
+        });
+    });
+    </script>
+
+<form id="form1" runat="server">
+    <div><input id="btn" type="button" value="Hide Paragraphs" /></div>
+
+    <div ><h1>
+        Spelman is the Number 1 HBCU Because:
+    </h1></div>
+    <p id="pp1"> When U.S. News and World Report came out with their ranking of the top 20 HBCUs in the country, I became curious.  I was wondering if my personal perception of the best schools matched the views of those who make these lists.  I couldn’t afford to attend an HBCU out of high school (not to mention that my grades were terrible), and although I’d love to teach at an HBCU, it’s become difficult for African American professors to get jobs at campuses that have been taken over by people who aren’t black (thats another interesting story).  In fact, many HBCUs don’t have any African American Professors in their business schools or Science departments – and it’s not because black scholars aren’t applying.
+
+    <p id="pp2">
+        At any rate, the school at the top of the list was Spelman College, the university I love and hate, all at the same time.  The funny thing about my love/hate relationship with Spelman is that my disdain is actually driven by my extreme admiration for the university.  In fact, it may even be rooted in jealousy.  I had a relative I wanted to send to Spelman, but the massive tuition bill was so high that she couldn’t attend.  To make matters worse, the school doesn’t seem to care much about giving scholarships, but demand for admission is so high, they don’t have to give away anything.
+    </p>
+    <p id="pp3">
+        I’ve always stated to others that Spelman College is not just the best school in the country for black women, it’s the best school in the country, PERIOD.  Unlike Harvard, Yale and all the other schools with multi-billion dollar endowments, I am hard pressed to think of any Spelman grad I know who isn’t a doctor, lawyer, professor, or successful professional in some other field.  Spelman College is nothing less than a factory of greatness, and the women who come out of this institution are typically second-to-none.</p>
+    </p>
+
+    <div id = "menu">
+        <p>
+            <ol>
+                <li>
+                    Crossing Epsilon Eta Chapter, Spr '15
+                </li>
+                <li>
+                    Becoming a Math Major
+                </li>
+                <li>
+                    Getting my first internship
+                </li>
+
+            </ol>
+        </p>
+    </div>
+
+    <div>
+        <h3>
+           Why is Computer Science a Good Major?
+        </h3>
+        <h4>
+            Computer Science is a great major for those who
+            love to think outside the box. It offers ways into
+            the technology world that furthers the cause of progression,
+            advancement, and betterment of the society that we live in.
+            “Computer science is the study of problem solving. A computer
+            scientist views a computer the way an astronomer views a telescope.
+            It’s a way to get at what you’re really interested in
+            studying.” Computer science is about thinking how best to solve a
+            challenging problem and having the imagination to see the world differently
+            more than it is about gaining a ticket to a job. Whether thinking through
+            a sophisticated algorithm or persevering through debugging a program, computer
+            science does increase one’s appreciation for solving difficult problems
+            and provides the framework to solve new ones, which results in a
+            stimulating educational experience.
+        </h4>
+    </div>
+</form>
+
+
+</body>
+</html>
